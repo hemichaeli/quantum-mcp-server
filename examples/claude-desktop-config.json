@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "quantum-pinui-binui": {
+      "url": "https://pinuy-binuy-analyzer-production.up.railway.app/mcp/v1/jsonrpc",
+      "transport": "http"
+    }
+  }
+}
