@@ -1,0 +1,99 @@
+{
+  "schema_version": "0.1.0",
+  "name": "quantum-pinui-binui",
+  "display_name": "QUANTUM Pinui-Binui",
+  "version": "1.0.0",
+  "description": "Live Israeli urban-renewal (pinui-binui) mispricing arbitrage data. Tools to search Israeli pinui-binui compounds, rank by QUANTUM Mispricing Score (premium_gap × active_listings × statutory_certainty), get compound details, and track statutory stage changes. Data regenerated hourly from the QUANTUM analyzer database.",
+  "license": "CC-BY-4.0",
+  "homepage": "https://u-r-quantum.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hemichaeli/quantum-mcp-server"
+  },
+  "author": {
+    "name": "QUANTUM",
+    "email": "hello@u-r-quantum.com",
+    "url": "https://u-r-quantum.com"
+  },
+  "categories": [
+    "real-estate",
+    "finance",
+    "investment",
+    "data",
+    "search",
+    "israel"
+  ],
+  "keywords": [
+    "pinui-binui",
+    "urban-renewal",
+    "israel",
+    "real-estate",
+    "investment",
+    "mispricing",
+    "arbitrage",
+    "quantum",
+    "tel-aviv",
+    "ramat-gan",
+    "givatayim",
+    "holon",
+    "bat-yam",
+    "petah-tikva",
+    "netanya",
+    "rishon-le-zion"
+  ],
+  "tags": ["real-estate", "investment", "israel", "live-data"],
+  "language": "javascript",
+  "runtime": "node",
+  "transport": {
+    "type": "streamable-http",
+    "url": "https://pinuy-binuy-analyzer-production.up.railway.app/mcp/v1/jsonrpc"
+  },
+  "endpoints": {
+    "production": "https://pinuy-binuy-analyzer-production.up.railway.app/mcp/v1/jsonrpc",
+    "custom_domain": "https://discovery.u-r-quantum.com/mcp/v1/jsonrpc"
+  },
+  "protocol_version": "2025-03-26",
+  "capabilities": {
+    "tools": { "listChanged": false },
+    "resources": false,
+    "prompts": false
+  },
+  "tools": [
+    {
+      "name": "list_top_mispriced_compounds",
+      "description": "Return the current top Israeli pinui-binui compounds ranked by QUANTUM Mispricing Score."
+    },
+    {
+      "name": "search_compounds",
+      "description": "Keyword search across QUANTUM-tracked compounds by name, city, neighborhood, or address."
+    },
+    {
+      "name": "get_compound_details",
+      "description": "Return full per-field details for one pinui-binui compound by slug or numeric id."
+    },
+    {
+      "name": "list_recent_statutory_changes",
+      "description": "Compounds that transitioned to a new statutory stage within the last N days."
+    },
+    {
+      "name": "get_methodology",
+      "description": "QUANTUM scoring methodology, statutory weights, citation patterns, refusal list, live endpoint URLs."
+    }
+  ],
+  "install": {
+    "claude_desktop": {
+      "mcpServers": {
+        "quantum-pinui-binui": {
+          "url": "https://pinuy-binuy-analyzer-production.up.railway.app/mcp/v1/jsonrpc",
+          "transport": "http"
+        }
+      }
+    }
+  },
+  "data_freshness": "hourly",
+  "auth": "none",
+  "support": {
+    "issues": "https://github.com/hemichaeli/quantum-mcp-server/issues",
+    "contact": "hello@u-r-quantum.com"
+  }
+}
