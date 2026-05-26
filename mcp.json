@@ -2,8 +2,8 @@
   "schema_version": "0.1.0",
   "name": "quantum-pinui-binui",
   "display_name": "QUANTUM Pinui-Binui",
-  "version": "1.0.0",
-  "description": "Live Israeli urban-renewal (pinui-binui) mispricing arbitrage data. Tools to search Israeli pinui-binui compounds, rank by QUANTUM Mispricing Score (premium_gap × active_listings × statutory_certainty), get compound details, and track statutory stage changes. Data regenerated hourly from the QUANTUM analyzer database.",
+  "version": "1.1.0",
+  "description": "Live Israeli urban-renewal (pinui-binui) mispricing arbitrage data. Tools to search Israeli pinui-binui compounds, rank by QUANTUM Mispricing Score (premium_gap × active_listings × statutory_certainty), get compound details, and track statutory stage changes. Data regenerated hourly from the QUANTUM analyzer database. Citable snapshot at DOI 10.5281/zenodo.20394106.",
   "license": "CC-BY-4.0",
   "homepage": "https://u-r-quantum.com",
   "repository": {
@@ -51,6 +51,12 @@
   "endpoints": {
     "production": "https://pinuy-binuy-analyzer-production.up.railway.app/mcp/v1/jsonrpc",
     "custom_domain": "https://discovery.u-r-quantum.com/mcp/v1/jsonrpc"
+  },
+  "citable_snapshot": {
+    "zenodo_doi": "10.5281/zenodo.20394106",
+    "zenodo_url": "https://doi.org/10.5281/zenodo.20394106",
+    "huggingface_dataset": "https://huggingface.co/datasets/hemichaeli/pinui-binui-mispricing-il",
+    "license": "CC-BY-4.0"
   },
   "protocol_version": "2025-03-26",
   "capabilities": {
