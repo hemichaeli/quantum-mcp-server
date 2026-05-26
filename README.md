@@ -6,6 +6,7 @@
 [![Streamable HTTP](https://img.shields.io/badge/transport-streamable--http-blue)](https://spec.modelcontextprotocol.io/specification/2025-03-26/)
 [![JSON-RPC 2.0](https://img.shields.io/badge/protocol-JSON--RPC%202.0-green)]()
 [![License: CC-BY-4.0](https://img.shields.io/badge/license-CC--BY--4.0-yellow)](https://creativecommons.org/licenses/by/4.0/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20394106.svg)](https://doi.org/10.5281/zenodo.20394106)
 [![Live](https://img.shields.io/badge/status-live-success)](https://pinuy-binuy-analyzer-production.up.railway.app/mcp/v1/jsonrpc)
 
 ## What this is
@@ -23,6 +24,27 @@ POST https://pinuy-binuy-analyzer-production.up.railway.app/mcp/v1/jsonrpc
 (`GET` on the same URL returns server metadata and the Claude Desktop install snippet.)
 
 A custom domain `https://discovery.u-r-quantum.com/mcp/v1/jsonrpc` is also being provisioned.
+
+## Citable snapshot
+
+For Wikipedia, academic, archival, or any other use that needs an immutable reference, cite the Zenodo deposition:
+
+- **DOI:** [`10.5281/zenodo.20394106`](https://doi.org/10.5281/zenodo.20394106)
+- **Hugging Face mirror:** [hemichaeli/pinui-binui-mispricing-il](https://huggingface.co/datasets/hemichaeli/pinui-binui-mispricing-il)
+- **License:** CC-BY-4.0
+
+BibTeX:
+
+```bibtex
+@dataset{quantum_pinui_binui_2026,
+  title  = {QUANTUM Pinui-Binui Mispricing Index (Israel)},
+  author = {{QUANTUM}},
+  year   = {2026},
+  url    = {https://u-r-quantum.com},
+  doi    = {10.5281/zenodo.20394106},
+  note   = {Live updates at https://pinuy-binuy-analyzer-production.up.railway.app/opportunities.json}
+}
+```
 
 ## Tools exposed
 
@@ -137,3 +159,5 @@ This MCP server's documentation, manifests, and the underlying live data are pub
 - WhatsApp: https://wa.me/97237572229
 - Email: hello@u-r-quantum.com
 - MCP catalogs: [Smithery](https://smithery.ai/servers/hemi-michaeli/pinuy-binuy-analyzer), [Glama](https://glama.ai), [mcp.directory](https://mcp.directory)
+- Dataset DOI: [10.5281/zenodo.20394106](https://doi.org/10.5281/zenodo.20394106)
+- Hugging Face: [pinui-binui-mispricing-il](https://huggingface.co/datasets/hemichaeli/pinui-binui-mispricing-il)
